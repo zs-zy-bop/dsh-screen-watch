@@ -1,0 +1,42 @@
+{
+  "name": "dsh-screen-watch",
+  "version": "0.3.1",
+  "type": "module",
+  "description": "让 DSH 里的伴侣陪你看视频：只截目标窗口的画面，按一条视频一组保存，画面能直接送进模型，并带一个陪刷面板（Windows）",
+  "license": "MIT",
+  "author": "折扇 & 祝遥",
+  "keywords": ["dsh-plugin", "deepseek-harness", "screen-capture", "video", "companion"],
+  "os": ["win32"],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "exports": {
+    ".": "./dsh-plugin.mjs",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dsh-plugin.mjs",
+    "core.mjs",
+    "audio.mjs",
+    "panel-api.mjs",
+    "client.js",
+    "capture.ps1",
+    "montage.ps1",
+    "ocr.ps1",
+    "audio_helper.py",
+    "asr_sensevoice.py",
+    "install-local.mjs",
+    "cordis.bundle.yml",
+    "README.md",\n    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.bundle.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
