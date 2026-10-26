@@ -35,6 +35,18 @@ dsh plugin --profile <你的 profile> add dsh-screen-watch
 
 桌面版的 profile 由 Electron 托管，命令行有时走不通，那就用本包里附带的 `install-local.mjs` 把包挂进 profile，然后整个退出 DSH 再开。
 
+## 从 GitHub 安装
+
+仓库：https://github.com/zs-zy-bop/dsh-screen-watch
+
+插件市场里可以用 GitHub 源装，安装时会锁到具体 commit：
+
+`
+dsh plugin --profile <你的 profile> add "github:zs-zy-bop/dsh-screen-watch#v0.3.1"
+`
+
+装完要整个退出 DSH 再开一次，插件和面板才会加载。
+
 ## 用法
 
 在对话里说一句"开始看"，或者打开 设置 → 陪刷抖音 点"开始"，之后正常刷抖音就行。
